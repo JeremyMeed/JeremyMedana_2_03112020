@@ -1,0 +1,177 @@
+/* Body - General */
+
+body {
+  font-family: "Raleway", "sans-serif";
+  width: 100%;
+}
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header img {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+#top-menu {
+  display: flex;
+}
+
+#menu {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+  padding-top: 40px;
+}
+
+nav ul li a {
+  color: black;
+  padding: 45px 25px 0;
+}
+
+nav ul li a:hover {
+  color: #0065fc;
+  border-top: 2px solid;
+  padding: 45px 25px 0;
+}
+
+#inscription {
+  color: #0065fc;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-right: 70px;
+  padding: 40px 0 0;
+}
+
+#inscription :hover {
+  border-radius: 5px;
+  background-color: #deebff;
+}
+
+/* Section 1 */
+
+.container {
+  margin-left: 40px;
+}
+
+.container p {
+  margin-top: 10px;
+}
+
+form {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.gps {
+  background-color: #f2f2f2;
+  padding: 15px 20px 16px 20px;
+  border-radius: 15px 0 0 15px;
+}
+
+#localisation {
+  height: 50px;
+  width: 225px;
+  margin-right: 0;
+  padding-right: 0;
+  border: 1px #f2f2f2 solid;
+  border-right: transparent;
+  border-left: transparent;
+  outline: transparent;
+  font-size: 1.1em;
+}
+
+#localisation::placeholder {
+  color: black;
+  font-weight: bold;
+  font-family: "Raleway", "sans-serif";
+  padding: 15px;
+}
+
+.btn {
+  background-color: #0065fc;
+  color: white;
+  height: 50px;
+  width: 140px;
+  padding-left: 0;
+  margin-left: 0;
+  font-weight: bold;
+  font-family: "Raleway", "sans-serif";
+  font-size: 1.1em;
+  border: transparent;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+
+#filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#filter h3 {
+  margin-right: 30px;
+}
+
+.filters {
+  display: flex;
+  margin-right: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 2px #f2f2f2 solid;
+  border-radius: 35px;
+  border-left: transparent;
+  cursor: pointer;
+}
+
+.filters i {
+  font-size: large;
+  margin: auto;
+  border: 1px solid transparent;
+  border-radius: 35px;
+  padding: 15px;
+  color: #0065fc;
+  background-color: #deebff;
+}
+
+.filters .fa-child {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.filters p {
+  font-weight: bold;
+  margin: auto;
+  padding: 15px 18px 15px 12px;
+  border-radius: 35px;
+}
+
+.filters :hover {
+  background-color: #deebff;
+  color: #0065fc;
+}
