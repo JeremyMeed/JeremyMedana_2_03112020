@@ -1,5 +1,6 @@
 /* Body - General */
 
+html,
 body {
   font-family: "Raleway", "sans-serif";
   width: 100%;
@@ -230,8 +231,8 @@ form {
 }
 
 .vignettes-hebergements {
-  width: 240px;
-  height: 190px;
+  width: 235px;
+  height: 189px;
   margin-bottom: 30px;
   border: 5px white solid;
   border-radius: 20px;
@@ -240,8 +241,8 @@ form {
 }
 
 .vignettes-hebergements img {
-  width: 240px;
-  height: 110px;
+  width: 235px;
+  height: 114px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
@@ -288,7 +289,7 @@ form {
 /* Section les plus populaires */
 
 .container-populaires {
-  width: 30%;
+  width: 28%;
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 25px;
@@ -303,8 +304,69 @@ form {
   justify-content: space-between;
 }
 
+#titre-populaires h2 {
+  margin-left: 43px;
+}
+
 #titre-populaires i {
   margin: 20px;
   font-size: 1.4em;
   padding-top: 4px;
+}
+
+#populaires {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vignettes-populaires {
+  width: 333px;
+  height: 134px;
+  margin-bottom: 30px;
+  border: 5px white solid;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px #d0d0d0;
+}
+
+.vignettes-populaires img {
+  width: 127px;
+  height: 134px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+
+.vignettes-populaires a {
+  display: flex;
+}
+
+.description-populaires {
+  margin: 0 25px 0 20px;
+}
+
+.vignettes-populaires h3 {
+  margin: 10px 0 0 0;
+  font-size: 1em;
+}
+
+.vignettes-populaires p {
+  margin-top: 7px;
+  margin-bottom: 40px;
+  font-size: 0.9em;
+}
+
+.description-populaires div {
+  color: #0065fc;
+  display: flex;
+  font-size: 12px;
+}
+
+.description-populaires i {
+  margin-right: 2px;
+}
+
+.vignettes-populaires:hover {
+  box-shadow: 0px 0px 30px #c2c2c2;
 }
