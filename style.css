@@ -3,12 +3,20 @@
 html,
 body {
   font-family: "Raleway", "sans-serif";
-  width: 100%;
+  font-weight: 300;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  color: black;
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0;
+  font-size: 1.4em;
+}
+
+h2 {
   font-size: 1.4em;
 }
 
@@ -19,6 +27,7 @@ h3 {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 /* Header */
@@ -29,14 +38,11 @@ header {
 }
 
 #header img {
-  margin-left: 40px;
-  margin-top: 10px;
+  padding-left: 40px;
+  padding-top: 25px;
 }
 
-#top-menu {
-  display: flex;
-}
-
+#top-menu,
 #menu {
   display: flex;
 }
@@ -48,38 +54,35 @@ ul {
 }
 
 nav ul li {
-  margin-right: 20px;
+  padding-right: 20px;
   padding-top: 40px;
 }
 
 nav ul li a {
-  color: black;
   padding: 45px 25px 0;
 }
 
 nav ul li a:hover {
   color: #0065fc;
   border-top: 2px solid;
-  padding: 45px 25px 0;
 }
 
 #inscription {
   color: #0065fc;
   font-weight: bold;
-  margin-left: 30px;
-  margin-right: 70px;
-  padding: 40px 0 0;
+  padding: 40px 70px 0 30px;
 }
 
 #inscription :hover {
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   background-color: #deebff;
+  padding: 50px 0 0 0;
 }
 
 /* Section Recherche et Filtres */
 
-.container {
-  margin-left: 40px;
+.container-section1 {
+  padding-left: 40px;
 }
 
 .container p {
@@ -87,8 +90,9 @@ nav ul li a:hover {
 }
 
 form {
-  margin-top: 15px;
-  margin-bottom: 30px;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
 
 .gps {
@@ -99,9 +103,7 @@ form {
 
 #localisation {
   height: 50px;
-  width: 225px;
-  margin-right: 0;
-  padding-right: 0;
+  width: 226px;
   border: 1px #f2f2f2 solid;
   border-right: transparent;
   border-left: transparent;
@@ -110,21 +112,19 @@ form {
 }
 
 #localisation::placeholder {
-  color: black;
-  font-weight: bold;
   font-family: "Raleway", "sans-serif";
-  padding: 15px;
+  color: black;
+  font-weight: 700;
+  padding: 10px;
 }
 
 .btn {
   background-color: #0065fc;
   color: white;
   height: 50px;
-  width: 140px;
-  padding-left: 0;
-  margin-left: 0;
-  font-weight: bold;
+  width: 134px;
   font-family: "Raleway", "sans-serif";
+  font-weight: 500;
   font-size: 1.1em;
   border: transparent;
   border-radius: 0 15px 15px 0;
@@ -137,7 +137,7 @@ form {
 }
 
 #filter h3 {
-  margin-right: 30px;
+  padding: 0 30px 0 0;
 }
 
 .filters {
@@ -152,7 +152,6 @@ form {
 
 .filters i {
   font-size: large;
-  margin: auto;
   border: 1px solid transparent;
   border-radius: 35px;
   padding: 15px;
@@ -166,9 +165,10 @@ form {
 }
 
 .filters p {
+  font-size: 1.1em;
   font-weight: bold;
   margin: auto;
-  padding: 15px 18px 16px 12px;
+  padding: 8px 20px 8px 12px;
   border-radius: 35px;
 }
 
@@ -203,24 +203,19 @@ form {
 
 .container-hebergements-pop {
   display: flex;
-  margin: 0 40px 40px 25px;
+  padding: 0 25px 40px 25px;
   justify-content: space-around;
 }
 
 .container-hebergements {
-  width: 60%;
+  width: 61%;
   border-radius: 20px;
-  padding: 25px;
+  padding: 20px 25px 10px 25px;
   background-color: #f2f2f2;
-}
-
-.container-hebergements a {
-  color: black;
 }
 
 #titre-hebergements {
   margin: 25px 0 25px 15px;
-  font-size: 1.4em;
 }
 
 #hebergements {
@@ -256,23 +251,23 @@ form {
   font-size: 0.9em;
 }
 
-.vignettes-hebergements a div {
+.note,
+.note-pop {
   color: #0065fc;
   display: flex;
   font-size: 12px;
-  margin: 9px 0 0 10px;
+}
+
+.note {
+  padding: 9px 0 0 10px;
+}
+
+.empty-star {
+  color: #d0d0d0;
 }
 
 .vignettes-hebergements i {
   margin-right: 2px;
-}
-
-.stars i:nth-child(5) {
-  color: #d0d0d0;
-}
-
-.stars-1 i:nth-child(n + 4) {
-  color: #d0d0d0;
 }
 
 .vignettes-hebergements:hover {
@@ -281,21 +276,17 @@ form {
 
 #more {
   font-size: 1.1em;
-  font-weight: bold;
-  margin-top: 15px;
+  font-weight: 600;
+  padding: 15px 0 0 20px;
 }
 
 /* Section les plus populaires */
 
 .container-populaires {
-  width: 28%;
+  width: 27%;
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding: 25px;
-}
-
-.container-populaires a {
-  color: black;
+  padding: 20px 25px 10px 25px;
 }
 
 #titre-populaires {
@@ -304,13 +295,13 @@ form {
 }
 
 #titre-populaires h2 {
-  margin-left: 20px;
+  margin: 25px 0 25px 15px;
+  padding-bottom: 10px;
 }
 
 #titre-populaires i {
-  margin: 20px;
+  padding: 28px 10px 20px;
   font-size: 1.4em;
-  padding-top: 4px;
 }
 
 #populaires {
@@ -356,12 +347,6 @@ form {
   font-size: 0.9em;
 }
 
-.description-populaires div {
-  color: #0065fc;
-  display: flex;
-  font-size: 12px;
-}
-
 .description-populaires i {
   margin-right: 2px;
 }
@@ -373,35 +358,114 @@ form {
 /* Section Activités */
 
 #titre-activites {
-  margin-left: 40px;
+  padding-left: 42px;
 }
 
 #container-activites {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
+  padding: 10px 20px 60px 20px;
   justify-content: space-around;
 }
 
-#container-activites a {
-  color: black;
+#container-activites h3 {
+  margin-left: 20px;
+  font-size: 1em;
 }
 
-.box1 {
-  display: flex;
-  width: 300px;
-  height: 500px;
+.large-vignette-act {
+  width: 302px;
+  height: 446px;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px #d0d0d0;
+  box-shadow: 0 0 10px #d0d0d0;
 }
 
-.box1 img {
-  width: 300px;
-  height: 400px;
+.large-vignette-act img {
+  width: 302px;
+  height: 389px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
 
-.box1 h3 {
-  margin-left: 20px;
+.box-2vignettes {
+  width: 302px;
+  height: 446px;
+}
+
+.small-vignette-act {
+  border-radius: 20px;
+  box-shadow: 0 0 10px #d0d0d0;
+}
+
+.small-vignette-act img {
+  width: 302px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.activite2 {
+  height: 235px;
+}
+
+.activite2 img {
+  height: 179px;
+}
+
+.activite3 {
+  height: 164px;
+  margin-top: 45px;
+}
+
+.activite3 img {
+  height: 108px;
+}
+
+.activite5 {
+  height: 196px;
+}
+
+.activite5 img {
+  height: 138px;
+}
+
+.activite6 {
+  height: 209px;
+  margin-top: 39px;
+}
+
+.activite6 img {
+  height: 153px;
+}
+
+.large-vignette-act:hover,
+#small-vignette-act:hover {
+  box-shadow: 0px 0px 30px #c2c2c2;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 40px 0 50px 0;
+}
+
+#about,
+#nos-hebergements,
+#assistance {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+#about {
+  padding-left: 40px;
+}
+
+#assistance {
+  padding-left: 10px;
+}
+
+footer a {
+  font-size: 1em;
+  padding: 7px 0 10px 0;
 }
