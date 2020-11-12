@@ -13,6 +13,7 @@ body {
 h1 {
   font-weight: 700;
   margin-bottom: 0;
+  padding-bottom: 0;
   font-size: 1.4em;
 }
 
@@ -38,8 +39,7 @@ header {
 }
 
 #header img {
-  padding-left: 40px;
-  padding-top: 25px;
+  padding: 30px 0 20px 40px;
 }
 
 #top-menu,
@@ -50,16 +50,16 @@ header {
 ul {
   list-style-type: none;
   display: flex;
-  margin-top: 0;
+  margin: 0;
 }
 
 nav ul li {
   padding-right: 20px;
-  padding-top: 40px;
+  padding-top: 45px;
 }
 
 nav ul li a {
-  padding: 45px 25px 0;
+  padding: 43px 25px 0;
 }
 
 nav ul li a:hover {
@@ -70,7 +70,7 @@ nav ul li a:hover {
 #inscription {
   color: #0065fc;
   font-weight: bold;
-  padding: 40px 70px 0 30px;
+  padding: 45px 70px 0 30px;
 }
 
 #inscription :hover {
@@ -85,13 +85,13 @@ nav ul li a:hover {
   padding-left: 40px;
 }
 
-.container p {
+.container-section1 p {
   margin-top: 10px;
 }
 
 form {
   display: flex;
-  padding-top: 15px;
+  padding-top: 5px;
   padding-bottom: 30px;
 }
 
@@ -129,6 +129,10 @@ form {
   border: transparent;
   border-radius: 0 15px 15px 0;
   cursor: pointer;
+}
+
+button {
+  display: none;
 }
 
 #filter {
@@ -458,7 +462,7 @@ footer {
 }
 
 #about {
-  padding-left: 40px;
+  padding-left: 45px;
 }
 
 #assistance {
@@ -468,4 +472,94 @@ footer {
 footer a {
   font-size: 1em;
   padding: 7px 0 10px 0;
+}
+
+/* Media Queries */
+
+@media all and (max-width: 480px) {
+  /* General */
+
+  body {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Header */
+
+  #header img {
+    position: absolute;
+    width: auto;
+    padding: 15px 0 0 20px;
+  }
+
+  #top-menu {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  #inscription {
+    align-self: flex-end;
+    padding: 30px 20px 0 0;
+  }
+
+  nav ul {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  nav ul li {
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px #f2f2f2 solid;
+    width: 100%;
+  }
+
+  nav ul li:hover {
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    color: #0065fc;
+    border-top: none;
+  }
+
+  nav ul li a {
+    padding: 0;
+    margin: 40px 0 0 20px;
+  }
+
+  nav ul li a:hover {
+    border-top: none;
+  }
+
+  /* Section Recherche et Filtres */
+
+  .container-section1 {
+    border: 1px solid;
+    padding: 10px 0 0 20px;
+  }
+
+  form {
+    display: inline-flex;
+    padding: 20px 0 20px 0;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 1.1em;
+    color: white;
+    background-color: #0065fc;
+    border: transparent;
+    border-radius: 15px 15px 15px 15px;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 1024px) {
 }
