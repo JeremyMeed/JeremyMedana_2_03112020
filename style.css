@@ -4,7 +4,7 @@ html,
 body {
   font-family: "Raleway", "sans-serif";
   font-weight: 300;
-  width: auto;
+  width: 100%;
   padding: 0;
   margin: 0;
   color: black;
@@ -205,20 +205,21 @@ button {
 /* Section Hébergements */
 
 .container-hebergements-pop {
+  border: 1px solid;
   display: flex;
-  padding: 0 25px 40px 25px;
   justify-content: space-around;
+  padding: 0 25px 40px 25px;
 }
 
 .container-hebergements {
-  width: 61%;
   border-radius: 20px;
-  padding: 20px 25px 10px 25px;
+  padding: 20px 20px 10px 20px;
+  margin: 0 20px 0 15px;
   background-color: #f2f2f2;
 }
 
 #titre-hebergements {
-  margin: 25px 0 25px 15px;
+  margin: 25px 0 25px 20px;
 }
 
 #hebergements {
@@ -230,7 +231,7 @@ button {
 .vignettes-hebergements {
   width: 235px;
   height: 189px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   border: 5px white solid;
   border-radius: 20px;
   background-color: white;
@@ -238,10 +239,10 @@ button {
 }
 
 .vignettes-hebergements img {
-  width: 235px;
-  height: 114px;
+  width: 100%;
+  height: 60%;
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .vignettes-hebergements h3 {
@@ -286,10 +287,10 @@ button {
 /* Section les plus populaires */
 
 .container-populaires {
-  width: 27%;
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding: 20px 25px 10px 25px;
+  padding: 20px 20px 10px 20px;
+  margin: 0 15px 0 20px;
 }
 
 #titre-populaires {
@@ -303,7 +304,7 @@ button {
 }
 
 #titre-populaires i {
-  padding: 28px 10px 20px;
+  padding: 28px 15px 20px;
   font-size: 1.4em;
 }
 
@@ -311,13 +312,12 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .vignettes-populaires {
   width: 333px;
   height: 134px;
-  margin-bottom: 30px;
+  margin: 0 15px 30px 15px;
   border: 5px white solid;
   border-radius: 20px;
   background-color: white;
@@ -325,10 +325,10 @@ button {
 }
 
 .vignettes-populaires img {
-  width: 127px;
+  width: 38%;
   height: 134px;
   object-fit: cover;
-  border-radius: 20px 0 0 20px;
+  border-radius: 15px 0 0 15px;
 }
 
 .vignettes-populaires a {
@@ -366,88 +366,65 @@ button {
 
 #container-activites {
   display: flex;
-  padding: 10px 20px 60px 20px;
+  flex-wrap: wrap;
+  padding: 10px 20px 20px 20px;
   justify-content: space-around;
 }
 
 #container-activites h3 {
-  margin-left: 20px;
+  margin-left: 15px;
   font-size: 1em;
 }
 
-.large-vignette-act {
+.container-3act {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.vignette-activites {
   width: 302px;
-  height: 446px;
   border-radius: 20px;
   box-shadow: 0 0 10px #d0d0d0;
 }
 
-.large-vignette-act img {
-  width: 302px;
-  height: 389px;
+.vignette-activites img {
+  width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
+}
+
+.vignette-activites:hover {
+  box-shadow: 0px 0px 30px #c2c2c2;
+}
+
+.grande-vignette {
+  height: 446px;
+  margin-right: 45px;
+}
+
+.grande-vignette img {
+  height: 389px;
 }
 
 .box-2vignettes {
-  width: 302px;
-  height: 446px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .small-vignette-act {
-  border-radius: 20px;
-  box-shadow: 0 0 10px #d0d0d0;
+  height: 200px;
 }
 
 .small-vignette-act img {
-  width: 302px;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-}
-
-#activite2 {
-  height: 235px;
-}
-
-#activite2 img {
-  height: 179px;
-}
-
-#activite3 {
-  height: 164px;
-  margin-top: 45px;
-}
-
-#activite3 img {
-  height: 108px;
-}
-
-#activite5 {
-  height: 196px;
-}
-
-#activite5 img {
-  height: 138px;
-}
-
-#activite6 {
-  height: 209px;
-  margin-top: 39px;
-}
-
-#activite6 img {
-  height: 153px;
-}
-
-.large-vignette-act:hover,
-.small-vignette-act:hover {
-  box-shadow: 0px 0px 30px #c2c2c2;
+  height: 143px;
 }
 
 /* Footer */
 
 footer {
   display: flex;
+  justify-content: space-around;
   background-color: #f2f2f2;
   padding: 40px 0 50px 0;
 }
@@ -457,31 +434,17 @@ footer {
 #assistance {
   display: flex;
   flex-direction: column;
-  width: 33%;
-}
-
-#about {
-  padding-left: 45px;
-}
-
-#assistance {
-  padding-left: 10px;
 }
 
 footer a {
   font-size: 1em;
-  padding: 7px 0 10px 0;
+  padding: 5px 0 8px 0;
 }
 
 /* Media Queries */
 
+/* Grandes tablettes */
 @media all and (max-width: 1024px) {
-  /* General */
-
-  body {
-    width: 100%;
-  }
-
   /* Header */
 
   #header img {
@@ -542,12 +505,7 @@ footer a {
   }
 
   form {
-    display: inline-flex;
     padding: 20px 0 20px 0;
-  }
-
-  #localisation {
-    display: flex;
   }
 
   .btn {
@@ -555,10 +513,9 @@ footer a {
   }
 
   button {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
+    display: block;
     font-size: 1.1em;
+    padding: 0 17px 0 17px;
     color: white;
     background-color: #0065fc;
     border: transparent;
@@ -608,6 +565,7 @@ footer a {
   .container-populaires {
     width: auto;
     padding: 10px 0 25px 0;
+    margin: 0;
     border-radius: 0;
   }
 
@@ -621,15 +579,17 @@ footer a {
     margin-right: 20px;
   }
 
+  #populaires {
+    flex-flow: row wrap;
+  }
+
   .vignettes-populaires {
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   .container-hebergements {
     width: auto;
+    margin: 0;
     background-color: white;
     border-radius: 0;
   }
@@ -639,7 +599,8 @@ footer a {
   }
 
   .vignettes-hebergements {
-    margin-bottom: 15px;
+    width: 333px;
+    margin-bottom: 25px;
   }
 
   #more {
@@ -652,8 +613,45 @@ footer a {
     padding-left: 20px;
   }
 
+  .vignette-activites {
+    width: 333px;
+  }
+
+  /* FOOTER */
+
+  #about,
+  #nos-hebergements,
+  #assistance {
+    padding-left: 20px;
+  }
+}
+
+/* Moyennes et petites tablettes */
+@media all and (max-width: 767px) {
+  /* Section Activités */
+
   #container-activites {
     flex-direction: column;
+    align-content: center;
+    padding: 10px 0 20px 0;
+  }
+
+  .container-3act {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .grande-vignette {
+    height: 200px;
+    margin-right: 0;
+  }
+
+  .grande-vignette img {
+    height: 143px;
+  }
+
+  .vignette-activites {
+    margin-bottom: 25px;
   }
 
   /* FOOTER */
@@ -663,5 +661,7 @@ footer a {
   }
 }
 
-@media all and (max-width: 480px) {
+/* Smartphones */
+@media all and (max-width: 479) {
+  /* Section Recherche et Filtres */
 }
