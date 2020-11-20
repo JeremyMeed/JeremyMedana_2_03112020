@@ -120,8 +120,7 @@ form {
 .btn {
   background-color: #0065fc;
   color: white;
-  height: 50px;
-  width: 134px;
+  padding: 0 15px 0 15px;
   font-family: "Raleway", "sans-serif";
   font-weight: 500;
   font-size: 1.1em;
@@ -205,7 +204,6 @@ button {
 /* Section Hébergements */
 
 .container-hebergements-pop {
-  border: 1px solid;
   display: flex;
   justify-content: space-around;
   padding: 0 25px 40px 25px;
@@ -336,7 +334,7 @@ button {
 }
 
 .description-populaires {
-  margin: 0 25px 0 20px;
+  margin: 0 15px 0 15px;
 }
 
 .vignettes-populaires h3 {
@@ -519,7 +517,7 @@ footer a {
     color: white;
     background-color: #0065fc;
     border: transparent;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 0 15px 15px 0;
   }
 
   #filter h3 {
@@ -583,10 +581,6 @@ footer a {
     flex-flow: row wrap;
   }
 
-  .vignettes-populaires {
-    margin-bottom: 25px;
-  }
-
   .container-hebergements {
     width: auto;
     margin: 0;
@@ -616,14 +610,6 @@ footer a {
   .vignette-activites {
     width: 333px;
   }
-
-  /* FOOTER */
-
-  #about,
-  #nos-hebergements,
-  #assistance {
-    padding-left: 20px;
-  }
 }
 
 /* Moyennes et petites tablettes */
@@ -633,7 +619,6 @@ footer a {
   #container-activites {
     flex-direction: column;
     align-content: center;
-    padding: 10px 0 20px 0;
   }
 
   .container-3act {
@@ -659,9 +644,21 @@ footer a {
   footer {
     flex-direction: column;
   }
+
+  #about,
+  #nos-hebergements,
+  #assistance {
+    padding-left: 20px;
+  }
 }
 
 /* Smartphones */
-@media all and (max-width: 479) {
+@media all and (max-width: 479px) {
   /* Section Recherche et Filtres */
+
+  #localisation {
+    padding-right: 0;
+  }
+
+  /* Section activités */
 }
