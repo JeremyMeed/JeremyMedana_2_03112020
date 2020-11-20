@@ -636,6 +636,7 @@ footer a {
   }
 
   .vignette-activites {
+    width: 100%;
     margin-bottom: 25px;
   }
 
@@ -658,11 +659,5 @@ footer a {
 
   #localisation {
     padding-right: 0;
-  }
-
-  /* Section activités */
-
-  .vignette-activites {
-    width: 100%;
   }
 }
