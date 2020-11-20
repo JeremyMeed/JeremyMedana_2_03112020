@@ -1,0 +1,668 @@
+/* Body - General */
+
+html,
+body {
+  font-family: "Raleway", "sans-serif";
+  font-weight: 300;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header img {
+  padding: 30px 0 20px 40px;
+}
+
+#top-menu,
+#menu {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+nav ul li {
+  padding-right: 20px;
+  padding-top: 45px;
+}
+
+nav ul li a {
+  padding: 43px 25px 0;
+}
+
+nav ul li a:hover {
+  color: #0065fc;
+  border-top: 2px solid;
+}
+
+#inscription {
+  color: #0065fc;
+  font-weight: bold;
+  padding: 45px 70px 0 30px;
+}
+
+#inscription :hover {
+  border-radius: 0 0 5px 5px;
+  background-color: #deebff;
+  padding: 50px 0 0 0;
+}
+
+/* Section Recherche et Filtres */
+
+.container-section1 {
+  padding-left: 40px;
+}
+
+.container-section1 p {
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+.gps {
+  background-color: #f2f2f2;
+  padding: 15px 20px 16px 20px;
+  border-radius: 15px 0 0 15px;
+}
+
+#localisation {
+  padding-right: 40px;
+  border: 1px #f2f2f2 solid;
+  border-right: transparent;
+  border-left: transparent;
+  outline: transparent;
+  font-size: 1.1em;
+}
+
+#localisation::placeholder {
+  font-family: "Raleway", "sans-serif";
+  color: black;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.btn {
+  background-color: #0065fc;
+  color: white;
+  padding: 0 15px 0 15px;
+  font-family: "Raleway", "sans-serif";
+  font-weight: 500;
+  font-size: 1.1em;
+  border: transparent;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+
+button {
+  display: none;
+}
+
+#filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#filter h3 {
+  padding: 0 30px 0 0;
+}
+
+.filters {
+  display: flex;
+  margin-right: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 2px #d0d0d0 solid;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.filters i {
+  font-size: large;
+  border: 1px solid transparent;
+  border-radius: 35px;
+  padding: 15px;
+  color: #0065fc;
+  background-color: #deebff;
+}
+
+.filters .fa-child {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.filters p {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: auto;
+  padding: 8px 20px 8px 12px;
+  border-radius: 35px;
+}
+
+.filters:hover {
+  background-color: #deebff;
+  color: #0065fc;
+}
+
+#info {
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+#info i {
+  color: #0065fc;
+  font-size: small;
+  border: 1px #d0d0d0 solid;
+  border-radius: 30px;
+  padding: 5px 9px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#info p {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+}
+
+/* Section Hébergements */
+
+.container-hebergements-pop {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 25px 40px 25px;
+}
+
+.container-hebergements {
+  border-radius: 20px;
+  padding: 20px 20px 10px 20px;
+  margin: 0 20px 0 15px;
+  background-color: #f2f2f2;
+}
+
+#titre-hebergements {
+  margin: 25px 0 25px 20px;
+}
+
+#hebergements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.vignettes-hebergements {
+  width: 235px;
+  height: 189px;
+  margin-bottom: 25px;
+  border: 5px white solid;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px #d0d0d0;
+}
+
+.vignettes-hebergements img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.vignettes-hebergements h3 {
+  margin: 5px 10px 0 10px;
+  font-size: 1em;
+}
+
+.vignettes-hebergements p {
+  margin: 5px 10px 0 10px;
+  font-size: 0.9em;
+}
+
+.note,
+.note-pop {
+  color: #0065fc;
+  display: flex;
+  font-size: 12px;
+}
+
+.note {
+  padding: 9px 0 0 10px;
+}
+
+.empty-star {
+  color: #d0d0d0;
+}
+
+.vignettes-hebergements i {
+  margin-right: 2px;
+}
+
+.vignettes-hebergements:hover {
+  box-shadow: 0px 0px 30px #c2c2c2;
+}
+
+#more {
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 15px 0 0 20px;
+}
+
+/* Section les plus populaires */
+
+.container-populaires {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 20px 20px 10px 20px;
+  margin: 0 15px 0 20px;
+}
+
+#titre-populaires {
+  display: flex;
+  justify-content: space-between;
+}
+
+#titre-populaires h2 {
+  margin: 25px 0 25px 15px;
+  padding-bottom: 10px;
+}
+
+#titre-populaires i {
+  padding: 28px 15px 20px;
+  font-size: 1.4em;
+}
+
+#populaires {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vignettes-populaires {
+  width: 333px;
+  height: 134px;
+  margin: 0 15px 30px 15px;
+  border: 5px white solid;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px #d0d0d0;
+}
+
+.vignettes-populaires img {
+  width: 38%;
+  height: 134px;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+
+.vignettes-populaires a {
+  display: flex;
+}
+
+.description-populaires {
+  margin: 0 15px 0 15px;
+}
+
+.vignettes-populaires h3 {
+  margin: 10px 0 0 0;
+  font-size: 1em;
+}
+
+.vignettes-populaires p {
+  margin-top: 7px;
+  margin-bottom: 40px;
+  font-size: 0.9em;
+}
+
+.description-populaires i {
+  margin-right: 2px;
+}
+
+.vignettes-populaires:hover {
+  box-shadow: 0px 0px 30px #c2c2c2;
+}
+
+/* Section Activités */
+
+#titre-activites {
+  padding-left: 42px;
+}
+
+#container-activites {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px 20px 20px;
+  justify-content: space-around;
+}
+
+#container-activites h3 {
+  margin-left: 15px;
+  font-size: 1em;
+}
+
+.container-3act {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.vignette-activites {
+  width: 302px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #d0d0d0;
+}
+
+.vignette-activites img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.vignette-activites:hover {
+  box-shadow: 0px 0px 30px #c2c2c2;
+}
+
+.grande-vignette {
+  height: 446px;
+  margin-right: 45px;
+}
+
+.grande-vignette img {
+  height: 389px;
+}
+
+.box-2vignettes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.small-vignette-act {
+  height: 200px;
+}
+
+.small-vignette-act img {
+  height: 143px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f2f2f2;
+  padding: 40px 0 50px 0;
+}
+
+#about,
+#nos-hebergements,
+#assistance {
+  display: flex;
+  flex-direction: column;
+}
+
+footer a {
+  font-size: 1em;
+  padding: 5px 0 8px 0;
+}
+
+/* Media Queries */
+
+/* Grandes tablettes */
+@media all and (max-width: 1024px) {
+  /* Header */
+
+  #header img {
+    position: absolute;
+    width: auto;
+    padding: 15px 0 0 20px;
+  }
+
+  #top-menu {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  #inscription {
+    align-self: flex-end;
+    padding: 30px 20px 0 0;
+  }
+
+  nav ul {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  nav ul li {
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px #f2f2f2 solid;
+    width: 100%;
+  }
+
+  nav ul li:hover {
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    color: #0065fc;
+    border-top: none;
+  }
+
+  nav ul li a {
+    padding: 0;
+    margin: 40px 0 0 20px;
+  }
+
+  nav ul li a:hover {
+    border-top: none;
+  }
+
+  /* Section Recherche et Filtres */
+
+  .container-section1 {
+    padding: 10px 0 0 20px;
+  }
+
+  .container-section1 h1 {
+    margin-right: 20px;
+  }
+
+  form {
+    padding: 20px 0 20px 0;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  button {
+    display: block;
+    font-size: 1.1em;
+    padding: 0 17px 0 17px;
+    color: white;
+    background-color: #0065fc;
+    border: transparent;
+    border-radius: 0 15px 15px 0;
+  }
+
+  #filter h3 {
+    width: 100%;
+  }
+
+  .filters {
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .filters i {
+    font-size: medium;
+    padding: 13px;
+    border-radius: 23px;
+    margin: auto;
+  }
+
+  .filters p {
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  .filters .fa-child {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #info {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  /* Section Hébergements */
+
+  .container-hebergements-pop {
+    flex-direction: column-reverse;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container-populaires {
+    width: auto;
+    padding: 10px 0 25px 0;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  #titre-populaires h2 {
+    margin-left: 20px;
+  }
+
+  #titre-populaires i {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 20px;
+  }
+
+  #populaires {
+    flex-flow: row wrap;
+  }
+
+  .container-hebergements {
+    width: auto;
+    margin: 0;
+    background-color: white;
+    border-radius: 0;
+  }
+
+  #titre-hebergements {
+    margin-left: 0;
+  }
+
+  .vignettes-hebergements {
+    width: 333px;
+    margin-bottom: 25px;
+  }
+
+  #more {
+    padding-left: 0;
+  }
+
+  /* Section Activités */
+
+  #titre-activites {
+    padding-left: 20px;
+  }
+
+  .vignette-activites {
+    width: 333px;
+  }
+}
+
+/* Moyennes et petites tablettes */
+@media all and (max-width: 767px) {
+  /* Section Activités */
+
+  #container-activites {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .container-3act {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .grande-vignette {
+    height: 200px;
+    margin-right: 0;
+  }
+
+  .grande-vignette img {
+    height: 143px;
+  }
+
+  .vignette-activites {
+    margin-bottom: 25px;
+  }
+
+  /* FOOTER */
+
+  footer {
+    flex-direction: column;
+  }
+
+  #about,
+  #nos-hebergements,
+  #assistance {
+    padding-left: 20px;
+  }
+}
+
+/* Smartphones */
+@media all and (max-width: 479px) {
+  /* Section Recherche et Filtres */
+
+  #localisation {
+    padding-right: 0;
+  }
+
+  /* Section activités */
+
+  .vignette-activites {
+    width: 100%;
+  }
+}
