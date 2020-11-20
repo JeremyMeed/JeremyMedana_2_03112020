@@ -5,3 +5,5 @@ Enfin, vous avez trouvé votre premier stage en tant que développeur web chez R
 Un nouveau design basé sur les principes du Material Design vient d’être proposé par Loïc, designer UI.
 
 Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche qui vous est attribuée !
+
+Accès au site : https://jeremymeed.github.io/JeremyMedana_2_03112020/
