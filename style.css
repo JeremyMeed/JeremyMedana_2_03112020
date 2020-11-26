@@ -225,6 +225,7 @@ button {
 #hebergements {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .vignettes-hebergements {
